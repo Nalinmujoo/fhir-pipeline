@@ -1,0 +1,13 @@
+spring.application.name=fhir-pipeline
+server.port=8080
+
+# The connection URL. Assumes a database named 'fhir_db' is running on your local machine.
+# You will have to create this database manually in PostgreSQL.
+spring.datasource.url=jdbc:postgresql://localhost:5432/fhir_db
+
+# Add PostgreSQL username and password
+spring.datasource.username=
+spring.datasource.password=
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
